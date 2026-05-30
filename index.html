@@ -1,31 +1,146 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Salvatore Caccavo Apps</title>
+
+<style>
+
+body{
+margin:0;
+font-family:-apple-system,BlinkMacSystemFont,sans-serif;
+background:linear-gradient(135deg,#0066ff,#001b52);
+color:white;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+padding:40px 20px;
+}
+
+header{
+text-align:center;
+padding:40px 0;
+}
+
+h1{
+font-size:60px;
+margin:0;
+}
+
+.subtitle{
+font-size:24px;
+opacity:.9;
+margin-top:15px;
+}
+
+.apps{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:30px;
+margin-top:50px;
+}
+
+.card{
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(10px);
+padding:30px;
+border-radius:25px;
+box-shadow:0 10px 30px rgba(0,0,0,.25);
+}
+
+.card h2{
+margin-top:0;
+font-size:32px;
+}
+
+.card p{
+font-size:18px;
+line-height:1.5;
+}
+
+.support{
+margin-top:60px;
+background:rgba(255,255,255,0.08);
+padding:30px;
+border-radius:25px;
+}
+
+.support h2{
+margin-top:0;
+}
+
+.support a{
+color:white;
+font-weight:bold;
+text-decoration:none;
+}
+
+.privacy{
+margin-top:40px;
+background:rgba(255,255,255,0.08);
+padding:30px;
+border-radius:25px;
+}
+
+.footer{
+text-align:center;
+margin-top:50px;
+padding-bottom:30px;
+opacity:.8;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+
 <h1>Salvatore Caccavo Apps</h1>
 
-<p>
+<p class="subtitle">
 Applicazioni sviluppate per semplificare la vita quotidiana,
 la gestione personale e il tempo libero.
 </p>
 
-<hr>
+</header>
 
-<h2>📱 Applicazioni disponibili</h2>
+<div class="apps">
 
-<div>
-    <h3>💰 SalvaFlow</h3>
-    <p>
-        Gestione delle spese familiari, statistiche, categorie,
-        report e controllo delle finanze personali.
-    </p>
+<div class="card">
+
+<h2>💰 SalvaFlow</h2>
+
+<p>
+Gestione intelligente delle spese familiari.
+Categorie personalizzate, statistiche,
+report e controllo completo delle finanze.
+</p>
+
 </div>
 
-<div>
-    <h3>♠️ Ramino Segnapunti Pro</h3>
-    <p>
-        Gestione professionale delle partite di Ramino con
-        storico, statistiche, backup e punteggio personalizzabile.
-    </p>
+<div class="card">
+
+<h2>♠️ Ramino Segnapunti Pro</h2>
+
+<p>
+Gestisci le tue partite di Ramino in modo semplice
+e professionale con storico, statistiche,
+backup e punteggio personalizzabile.
+</p>
+
 </div>
 
-<hr>
+</div>
+
+<div class="support">
 
 <h2>📧 Supporto</h2>
 
@@ -34,16 +149,20 @@ Per assistenza o domande:
 </p>
 
 <p>
-✉️ salvatorecaccavo@yahoo.it
+<a href="mailto:salvatorecaccavo@yahoo.it">
+salvatorecaccavo@yahoo.it
+</a>
 </p>
 
-<hr>
+</div>
+
+<div class="privacy">
 
 <h2>🔒 Privacy Policy</h2>
 
 <p>
-Le applicazioni sviluppate da Salvatore Caccavo non raccolgono
-dati personali sensibili e non condividono dati con terze parti.
+Le applicazioni sviluppate da Salvatore Caccavo
+non raccolgono dati personali sensibili e non condividono dati con terze parti.
 </p>
 
 <p>
@@ -55,8 +174,17 @@ esclusivamente sul dispositivo dell'utente.
 Nessun dato viene venduto o ceduto a terzi.
 </p>
 
-<hr>
+</div>
+
+<div class="footer">
 
 <p>
 © 2026 Salvatore Caccavo
 </p>
+
+</div>
+
+</div>
+
+</body>
+</html>
