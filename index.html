@@ -5,66 +5,92 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Salvatore Caccavo Apps</title>
+<link rel="icon" type="image/png" href="images/logo.png">
 
 <style>
 
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 body{
-font-family:-apple-system,BlinkMacSystemFont,sans-serif;
-background:#000;
-color:white;
-line-height:1.6;
+    font-family:-apple-system,BlinkMacSystemFont,sans-serif;
+    background:#000;
+    color:white;
+    line-height:1.6;
 }
 
+/* HERO */
+
 .hero{
-min-height:70vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:40px 20px;
-background:
-linear-gradient(135deg,#0071e3,#001f5c);
+    min-height:70vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px 20px;
+    background:linear-gradient(135deg,#0071e3,#001f5c);
+}
+
+.main-logo{
+    width:220px;
+    height:auto;
+    margin-bottom:25px;
+    filter:drop-shadow(0 15px 30px rgba(0,0,0,.35));
 }
 
 .hero h1{
-font-size:clamp(3rem,8vw,6rem);
-font-weight:800;
-margin-bottom:20px;
+    font-size:clamp(3rem,8vw,6rem);
+    font-weight:800;
+    margin-bottom:20px;
 }
 
 .hero p{
-font-size:1.4rem;
-max-width:900px;
-opacity:.9;
+    font-size:1.4rem;
+    max-width:900px;
+    opacity:.9;
 }
 
+/* CONTENUTO */
+
 .container{
-max-width:1200px;
-margin:auto;
-padding:60px 20px;
+    max-width:1200px;
+    margin:auto;
+    padding:60px 20px;
 }
 
 .section-title{
-text-align:center;
-font-size:2.5rem;
-margin-bottom:50px;
+    text-align:center;
+    font-size:2.5rem;
+    margin-bottom:50px;
 }
 
 .apps{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-gap:30px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
 }
 
+/* CARD */
+
 .card{
-    .app-icon{
+    background:#111;
+    border:1px solid #222;
+    border-radius:30px;
+    padding:35px;
+    transition:.3s;
+    text-align:center;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    border-color:#0071e3;
+}
+
+.app-icon{
     width:120px;
     height:120px;
     border-radius:26px;
@@ -72,77 +98,64 @@ gap:30px;
     margin:0 auto 20px;
     object-fit:cover;
     box-shadow:0 10px 30px rgba(0,0,0,.35);
-    }
-background:#111;
-border:1px solid #222;
-border-radius:30px;
-padding:35px;
-transition:.3s;
-}
-
-.card:hover{
-transform:translateY(-8px);
-border-color:#0071e3;
 }
 
 .card h2{
-font-size:2rem;
-margin-bottom:15px;
+    font-size:2rem;
+    margin-bottom:15px;
 }
 
 .card p{
-opacity:.85;
-margin-bottom:25px;
+    opacity:.85;
+    margin-bottom:25px;
 }
 
 .button{
-display:inline-block;
-padding:14px 28px;
-background:#0071e3;
-color:white;
-text-decoration:none;
-border-radius:14px;
-font-weight:600;
+    display:inline-block;
+    padding:14px 28px;
+    background:#0071e3;
+    color:white;
+    text-decoration:none;
+    border-radius:14px;
+    font-weight:600;
 }
 
 .button:hover{
-opacity:.9;
+    opacity:.9;
+}
+
+/* SEZIONI */
+
+.about,
+.support,
+.privacy{
+    margin-top:40px;
+    background:#111;
+    padding:40px;
+    border-radius:30px;
 }
 
 .about{
-margin-top:80px;
-background:#111;
-padding:40px;
-border-radius:30px;
+    margin-top:80px;
 }
 
-.about h2{
-margin-bottom:20px;
-}
-
-.support{
-margin-top:40px;
-background:#111;
-padding:40px;
-border-radius:30px;
+.about h2,
+.support h2,
+.privacy h2{
+    margin-bottom:20px;
 }
 
 .support a{
-color:#4da3ff;
-text-decoration:none;
+    color:#4da3ff;
+    text-decoration:none;
 }
 
-.privacy{
-margin-top:40px;
-background:#111;
-padding:40px;
-border-radius:30px;
-}
+/* FOOTER */
 
 footer{
-text-align:center;
-padding:40px 20px;
-color:#999;
+    text-align:center;
+    padding:40px 20px;
+    color:#999;
 }
 
 </style>
@@ -152,114 +165,115 @@ color:#999;
 
 <section class="hero">
 
-<h1>Salvatore Caccavo Apps</h1>
+    <img src="images/logo.png"
+         alt="Salvatore Caccavo Apps"
+         class="main-logo">
 
-<p>
-Applicazioni iOS progettate per semplificare
-la gestione personale, delle finanze e del tempo libero.
-</p>
+    <h1>Salvatore Caccavo Apps</h1>
+
+    <p>
+        Applicazioni iOS sviluppate con passione per offrire
+        strumenti semplici, affidabili e professionali.
+    </p>
 
 </section>
 
 <div class="container">
 
-<h2 class="section-title">Le mie applicazioni</h2>
+    <h2 class="section-title">Le mie applicazioni</h2>
 
-<div class="apps">
+    <div class="apps">
 
-<div class="card">
+        <div class="card">
 
-    <img src="images/salvaflow.png"
-         alt="SalvaFlow"
-         class="app-icon">
+            <img src="images/salvaflow.png"
+                 alt="SalvaFlow"
+                 class="app-icon">
 
-    <h2>SalvaFlow</h2>
+            <h2>SalvaFlow</h2>
 
-<p>
-Gestione completa delle spese, entrate,
-statistiche, categorie personalizzate,
-backup e sincronizzazione.
-</p>
+            <p>
+                Gestione completa delle spese, entrate,
+                statistiche, categorie personalizzate,
+                backup e sincronizzazione.
+            </p>
 
-<a class="button"
-href="https://apps.apple.com/it/app/salvaflow/id6773806699"
-target="_blank">
-Scarica su App Store
-</a>
+            <a class="button"
+               href="https://apps.apple.com/it/app/salvaflow/id6773806699"
+               target="_blank">
+               Scarica su App Store
+            </a>
 
-</div>
+        </div>
 
-<div class="card">
+        <div class="card">
 
-    <img src="images/ramino.png"
-         alt="Ramino Segnapunti Pro"
-         class="app-icon">
+            <img src="images/ramino.png"
+                 alt="Ramino Segnapunti Pro"
+                 class="app-icon">
 
-    <h2>Ramino Segnapunti Pro</h2>
+            <h2>Ramino Segnapunti Pro</h2>
 
-<p>
-Gestione professionale delle partite di Ramino
-con storico, statistiche, esportazione dati,
-backup e punteggi personalizzati.
-</p>
+            <p>
+                Gestione professionale delle partite di Ramino
+                con storico, statistiche, esportazione dati,
+                backup e punteggi personalizzati.
+            </p>
 
-<a class="button"
-href="https://apps.apple.com/it/app/ramino-segnapunti-pro/id6774932245"
-target="_blank">
-Scarica su App Store
-</a>
+            <a class="button"
+               href="https://apps.apple.com/it/app/ramino-segnapunti-pro/id6774932245"
+               target="_blank">
+               Scarica su App Store
+            </a>
 
-</div>
+        </div>
 
-</div>
+    </div>
 
-<div class="about">
+    <div class="about">
 
-<h2>👨‍💻 Lo sviluppatore</h2>
+        <h2>👨‍💻 Lo sviluppatore</h2>
 
-<p>
-Sono uno sviluppatore iOS indipendente.
-Realizzo applicazioni semplici, veloci e affidabili
-pensate per risolvere problemi reali e migliorare
-l'esperienza quotidiana degli utenti.
-</p>
+        <p>
+            Salvatore Caccavo Apps è un progetto indipendente dedicato
+            alla creazione di applicazioni iOS intuitive, moderne e
+            orientate alla produttività personale e al tempo libero.
+        </p>
 
-</div>
+    </div>
 
-<div class="support">
+    <div class="support">
 
-<h2>📧 Supporto</h2>
+        <h2>📧 Supporto</h2>
 
-<p>
-Per assistenza, suggerimenti o segnalazioni:
-</p>
+        <p>Per assistenza, suggerimenti o segnalazioni:</p>
 
-<p>
-<a href="mailto:salvatorecaccavo@yahoo.it">
-salvatorecaccavo@yahoo.it
-</a>
-</p>
+        <p>
+            <a href="mailto:salvatorecaccavo@yahoo.it">
+                salvatorecaccavo@yahoo.it
+            </a>
+        </p>
 
-</div>
+    </div>
 
-<div class="privacy">
+    <div class="privacy">
 
-<h2>🔒 Privacy</h2>
+        <h2>🔒 Privacy</h2>
 
-<p>
-Le applicazioni non raccolgono dati personali sensibili,
-non vendono informazioni a terzi e utilizzano esclusivamente
-i servizi necessari al corretto funzionamento delle app.
-</p>
+        <p>
+            Le applicazioni non raccolgono dati personali sensibili,
+            non vendono informazioni a terzi e utilizzano esclusivamente
+            i servizi necessari al corretto funzionamento delle app.
+        </p>
 
-</div>
+    </div>
 
 </div>
 
 <footer>
-© 2026 Salvatore Caccavo
+    © 2026 Salvatore Caccavo
 </footer>
 
 </body>
 </html>
-`
+``
