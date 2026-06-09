@@ -8,109 +8,153 @@
 
 <style>
 
-body{
+*{
 margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
 font-family:-apple-system,BlinkMacSystemFont,sans-serif;
-background:linear-gradient(135deg,#0066ff,#001b52);
+background:#000;
 color:white;
+line-height:1.6;
+}
+
+.hero{
+min-height:70vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:40px 20px;
+background:
+linear-gradient(135deg,#0071e3,#001f5c);
+}
+
+.hero h1{
+font-size:clamp(3rem,8vw,6rem);
+font-weight:800;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:1.4rem;
+max-width:900px;
+opacity:.9;
 }
 
 .container{
 max-width:1200px;
 margin:auto;
-padding:40px 20px;
+padding:60px 20px;
 }
 
-header{
+.section-title{
 text-align:center;
-padding:40px 0;
-}
-
-h1{
-font-size:60px;
-margin:0;
-}
-
-.subtitle{
-font-size:24px;
-opacity:.9;
-margin-top:15px;
+font-size:2.5rem;
+margin-bottom:50px;
 }
 
 .apps{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
 gap:30px;
-margin-top:50px;
 }
 
 .card{
-background:rgba(255,255,255,0.08);
-backdrop-filter:blur(10px);
-padding:30px;
-border-radius:25px;
-box-shadow:0 10px 30px rgba(0,0,0,.25);
+background:#111;
+border:1px solid #222;
+border-radius:30px;
+padding:35px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+border-color:#0071e3;
 }
 
 .card h2{
-margin-top:0;
-font-size:32px;
+font-size:2rem;
+margin-bottom:15px;
 }
 
 .card p{
-font-size:18px;
-line-height:1.5;
+opacity:.85;
+margin-bottom:25px;
+}
+
+.button{
+display:inline-block;
+padding:14px 28px;
+background:#0071e3;
+color:white;
+text-decoration:none;
+border-radius:14px;
+font-weight:600;
+}
+
+.button:hover{
+opacity:.9;
+}
+
+.about{
+margin-top:80px;
+background:#111;
+padding:40px;
+border-radius:30px;
+}
+
+.about h2{
+margin-bottom:20px;
 }
 
 .support{
-margin-top:60px;
-background:rgba(255,255,255,0.08);
-padding:30px;
-border-radius:25px;
-}
-
-.support h2{
-margin-top:0;
+margin-top:40px;
+background:#111;
+padding:40px;
+border-radius:30px;
 }
 
 .support a{
-color:white;
-font-weight:bold;
+color:#4da3ff;
 text-decoration:none;
 }
 
 .privacy{
 margin-top:40px;
-background:rgba(255,255,255,0.08);
-padding:30px;
-border-radius:25px;
+background:#111;
+padding:40px;
+border-radius:30px;
 }
 
-.footer{
+footer{
 text-align:center;
-margin-top:50px;
-padding-bottom:30px;
-opacity:.8;
+padding:40px 20px;
+color:#999;
 }
 
 </style>
-
 </head>
 
 <body>
 
-<div class="container">
-
-<header>
+<section class="hero">
 
 <h1>Salvatore Caccavo Apps</h1>
 
-<p class="subtitle">
-Applicazioni sviluppate per semplificare la vita quotidiana,
-la gestione personale e il tempo libero.
+<p>
+Applicazioni iOS progettate per semplificare
+la gestione personale, delle finanze e del tempo libero.
 </p>
 
-</header>
+</section>
+
+<div class="container">
+
+<h2 class="section-title">Le mie applicazioni</h2>
 
 <div class="apps">
 
@@ -119,10 +163,16 @@ la gestione personale e il tempo libero.
 <h2>💰 SalvaFlow</h2>
 
 <p>
-Gestione intelligente delle spese familiari.
-Categorie personalizzate, statistiche,
-report e controllo completo delle finanze.
+Gestione completa delle spese, entrate,
+statistiche, categorie personalizzate,
+backup e sincronizzazione.
 </p>
+
+<a class="button"
+href="https://apps.apple.com/it/app/salvaflow/id6773806699"
+target="_blank">
+Scarica su App Store
+</a>
 
 </div>
 
@@ -131,12 +181,31 @@ report e controllo completo delle finanze.
 <h2>♠️ Ramino Segnapunti Pro</h2>
 
 <p>
-Gestisci le tue partite di Ramino in modo semplice
-e professionale con storico, statistiche,
-backup e punteggio personalizzabile.
+Gestione professionale delle partite di Ramino
+con storico, statistiche, esportazione dati,
+backup e punteggi personalizzati.
 </p>
 
+<a class="button"
+href="https://apps.apple.com/it/app/ramino-segnapunti-pro/id6774932245"
+target="_blank">
+Scarica su App Store
+</a>
+
 </div>
+
+</div>
+
+<div class="about">
+
+<h2>👨‍💻 Lo sviluppatore</h2>
+
+<p>
+Sono uno sviluppatore iOS indipendente.
+Realizzo applicazioni semplici, veloci e affidabili
+pensate per risolvere problemi reali e migliorare
+l'esperienza quotidiana degli utenti.
+</p>
 
 </div>
 
@@ -145,7 +214,7 @@ backup e punteggio personalizzabile.
 <h2>📧 Supporto</h2>
 
 <p>
-Per assistenza o domande:
+Per assistenza, suggerimenti o segnalazioni:
 </p>
 
 <p>
@@ -158,33 +227,22 @@ salvatorecaccavo@yahoo.it
 
 <div class="privacy">
 
-<h2>🔒 Privacy Policy</h2>
+<h2>🔒 Privacy</h2>
 
 <p>
-Le applicazioni sviluppate da Salvatore Caccavo
-non raccolgono dati personali sensibili e non condividono dati con terze parti.
-</p>
-
-<p>
-Alcune funzionalità possono utilizzare servizi nativi Apple
-esclusivamente sul dispositivo dell'utente.
-</p>
-
-<p>
-Nessun dato viene venduto o ceduto a terzi.
+Le applicazioni non raccolgono dati personali sensibili,
+non vendono informazioni a terzi e utilizzano esclusivamente
+i servizi necessari al corretto funzionamento delle app.
 </p>
 
 </div>
 
-<div class="footer">
+</div>
 
-<p>
+<footer>
 © 2026 Salvatore Caccavo
-</p>
-
-</div>
-
-</div>
+</footer>
 
 </body>
 </html>
+`
