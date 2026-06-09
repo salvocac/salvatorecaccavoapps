@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Salvatore Caccavo Apps</title>
-<link rel="icon" href="images/logo.png">
+<link rel="icon" type="image/png" href="images/logo.png">
 
 <style>
 
@@ -17,67 +17,57 @@ box-sizing:border-box;
 
 body{
 font-family:-apple-system,BlinkMacSystemFont,sans-serif;
-background:linear-gradient(135deg,#dcecff,#8db8ff);
+background:linear-gradient(135deg,#0071e3,#001f5c);
+color:white;
 min-height:100vh;
-color:#0f172a;
-overflow-x:hidden;
 }
 
 .hero{
 text-align:center;
-padding:80px 20px 40px;
+padding:80px 20px 60px;
 }
 
 .logo{
 width:220px;
 max-width:70%;
-filter:drop-shadow(0 15px 35px rgba(0,0,0,.20));
+filter:drop-shadow(0 15px 35px rgba(0,0,0,.30));
 }
 
-.brand{
-margin-top:20px;
-font-size:clamp(2.5rem,6vw,4.5rem);
+.hero h1{
+font-size:clamp(3rem,8vw,6rem);
+margin-top:25px;
 font-weight:800;
-letter-spacing:-2px;
 }
 
-.subtitle{
-margin-top:15px;
-font-size:1.3rem;
+.hero p{
+margin-top:20px;
+font-size:1.4rem;
 max-width:900px;
 margin-left:auto;
 margin-right:auto;
-opacity:.85;
+opacity:.9;
 }
 
 .container{
-max-width:1300px;
+max-width:1200px;
 margin:auto;
 padding:40px 20px 80px;
 }
 
 .apps{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(500px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
 gap:30px;
 margin-top:40px;
 }
 
 .card{
-background:rgba(255,255,255,.65);
-backdrop-filter:blur(20px);
--webkit-backdrop-filter:blur(20px);
-border-radius:40px;
+background:rgba(255,255,255,.12);
+backdrop-filter:blur(15px);
 padding:35px;
-box-shadow:0 15px 40px rgba(0,0,0,.12);
-display:flex;
-align-items:center;
-gap:25px;
-transition:.3s;
-}
-
-.card:hover{
-transform:translateY(-6px);
+border-radius:30px;
+text-align:center;
+box-shadow:0 10px 30px rgba(0,0,0,.25);
 }
 
 .app-icon{
@@ -85,85 +75,78 @@ width:140px;
 height:140px;
 border-radius:30px;
 object-fit:cover;
-box-shadow:0 10px 25px rgba(0,0,0,.15);
+margin-bottom:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.25);
 }
 
-.content{
-flex:1;
+.card h2{
+font-size:2rem;
+margin-bottom:15px;
 }
 
-.content h2{
-font-size:2.2rem;
-margin-bottom:10px;
-}
-
-.content p{
+.card p{
 font-size:1.1rem;
 line-height:1.6;
-margin-bottom:20px;
+margin-bottom:25px;
 }
 
 .button{
 display:inline-block;
-background:#000;
+background:black;
 color:white;
-padding:14px 26px;
-border-radius:14px;
+padding:14px 30px;
+border-radius:16px;
 text-decoration:none;
 font-weight:700;
+font-size:1rem;
+transition:.3s;
+}
+
+.button:hover{
+transform:translateY(-3px);
 }
 
 .section{
-margin-top:50px;
-background:rgba(255,255,255,.55);
-backdrop-filter:blur(20px);
+margin-top:40px;
+background:rgba(255,255,255,.12);
+backdrop-filter:blur(15px);
 padding:35px;
-border-radius:35px;
-box-shadow:0 10px 25px rgba(0,0,0,.08);
+border-radius:30px;
+box-shadow:0 10px 30px rgba(0,0,0,.15);
 }
 
 .section h2{
 margin-bottom:15px;
 }
 
+.section a{
+color:white;
+font-weight:bold;
+text-decoration:none;
+}
+
 footer{
 text-align:center;
 padding:40px;
-opacity:.7;
-}
-
-@media(max-width:900px){
-
-.apps{
-grid-template-columns:1fr;
-}
-
-.card{
-flex-direction:column;
-text-align:center;
-}
-
-.app-icon{
-width:120px;
-height:120px;
-}
-
+opacity:.8;
 }
 
 </style>
-</head>
 
+</head>
 <body>
 
 <section class="hero">
 
-<img src="images/logo.png" class="logo" alt="Salvatore Caccavo Apps">
+<img src="images/logo.png"
+     alt="Salvatore Caccavo Apps"
+     class="logo">
 
-<h1 class="brand">Salvatore Caccavo Apps</h1>
+<h1>Salvatore Caccavo Apps</h1>
 
-<p class="subtitle">
-Applicazioni iOS sviluppate con passione per offrire strumenti semplici,
-affidabili e professionali per la gestione personale e il tempo libero.
+<p>
+Applicazioni iOS sviluppate con passione per offrire
+strumenti semplici, affidabili e professionali.
 </p>
 
 </section>
@@ -174,47 +157,45 @@ affidabili e professionali per la gestione personale e il tempo libero.
 
 <div class="card">
 
-<img src="images/salvaflow.png" class="app-icon" alt="SalvaFlow">
-
-<div class="content">
+<img src="images/salvaflow.png"
+     alt="SalvaFlow"
+     class="app-icon">
 
 <h2>SalvaFlow</h2>
 
 <p>
-Gestione completa delle spese, entrate, statistiche,
-categorie personalizzate, backup e sincronizzazione.
+Gestione completa delle spese, entrate,
+statistiche, categorie personalizzate,
+backup e sincronizzazione.
 </p>
 
 <a class="button"
 href="https://apps.apple.com/it/app/salvaflow/id6773806699"
 target="_blank">
-Scarica da App Store
+🍎 App Store
 </a>
-
-</div>
 
 </div>
 
 <div class="card">
 
-<img src="images/ramino.png" class="app-icon" alt="Ramino Segnapunti Pro">
-
-<div class="content">
+<img src="images/ramino.png"
+     alt="Ramino Segnapunti Pro"
+     class="app-icon">
 
 <h2>Ramino Segnapunti Pro</h2>
 
 <p>
-Gestione professionale delle partite di Ramino con storico,
-statistiche, esportazione dati e punteggi personalizzati.
+Gestione professionale delle partite di Ramino
+con storico, statistiche, esportazione dati
+e punteggi personalizzati.
 </p>
 
 <a class="button"
 href="https://apps.apple.com/it/app/ramino-segnapunti-pro/id6774932245"
 target="_blank">
-Scarica da App Store
+🍎 App Store
 </a>
-
-</div>
 
 </div>
 
@@ -226,8 +207,8 @@ Scarica da App Store
 
 <p>
 Salvatore Caccavo Apps è un progetto indipendente dedicato
-alla realizzazione di applicazioni iOS moderne, intuitive e affidabili,
-pensate per semplificare le attività quotidiane.
+alla realizzazione di applicazioni iOS moderne, intuitive
+e affidabili per la produttività personale e il tempo libero.
 </p>
 
 </div>
@@ -237,11 +218,13 @@ pensate per semplificare le attività quotidiane.
 <h2>📧 Supporto</h2>
 
 <p>
-Per assistenza, suggerimenti o segnalazioni:
+Per assistenza o segnalazioni:
 </p>
 
 <p>
-<strong>salvatorecaccavo@yahoo.it</strong>
+<a href="mailto:salvatorecaccavo@yahoo.it">
+salvatorecaccavo@yahoo.it
+</a>
 </p>
 
 </div>
@@ -251,9 +234,8 @@ Per assistenza, suggerimenti o segnalazioni:
 <h2>🔒 Privacy</h2>
 
 <p>
-Le applicazioni non raccolgono dati personali sensibili,
-non vendono dati a terzi e utilizzano esclusivamente i servizi
-necessari al corretto funzionamento delle app.
+Le applicazioni non raccolgono dati personali sensibili
+e non condividono dati con terze parti.
 </p>
 
 </div>
