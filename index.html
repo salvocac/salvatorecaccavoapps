@@ -3,140 +3,132 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Salvatore Caccavo Apps</title>
-
-<link rel="icon" type="image/png" href="images/logo.png">
-
+<link rel="icon" href="images/logo.png">
 <style>
-
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
 }
-
 body{
 font-family:-apple-system,BlinkMacSystemFont,sans-serif;
-background:linear-gradient(135deg,#eef5ff,#cfe2ff);
+background:linear-gradient(135deg,#eef5ff,#d7e6ff);
 color:#1d1d1f;
-min-height:100vh;
 }
-
 .hero{
-max-width:1500px;
-margin:40px auto;
+max-width:1400px;
+margin:30px auto;
 padding:0 20px;
 }
-
 .hero img{
 width:100%;
 display:block;
 border-radius:40px;
-box-shadow:0 25px 60px rgba(0,0,0,.12);
+box-shadow:0 20px 60px rgba(0,0,0,.12);
 }
-
+.downloads{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+margin:30px auto 50px;
+padding:0 20px;
+}
+.download-btn{
+background:#000;
+color:#fff;
+text-decoration:none;
+padding:18px 30px;
+border-radius:18px;
+font-size:1.1rem;
+font-weight:700;
+transition:.3s;
+}
+.download-btn:hover{
+transform:translateY(-3px);
+}
 .container{
 max-width:1200px;
 margin:auto;
-padding:20px;
+padding:0 20px 50px;
 }
-
 .card{
-background:rgba(255,255,255,.65);
+background:rgba(255,255,255,.75);
 backdrop-filter:blur(20px);
 padding:40px;
-border-radius:30px;
-margin-top:30px;
-box-shadow:0 15px 40px rgba(0,0,0,.08);
+border-radius:35px;
+margin-bottom:25px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
 }
-
 .card h2{
 font-size:2rem;
 margin-bottom:15px;
-color:#0f172a;
 }
-
 .card p{
-font-size:1.1rem;
+font-size:1.2rem;
 line-height:1.8;
-color:#334155;
 }
-
 .email{
 font-weight:700;
-font-size:1.2rem;
 }
-
 .email a{
-text-decoration:none;
 color:#0071e3;
+text-decoration:none;
 }
-
 footer{
 text-align:center;
-padding:50px 20px;
+padding:40px;
 color:#64748b;
-font-size:0.95rem;
 }
-
 </style>
-
 </head>
-
 <body>
-
 <section class="hero">
-
 <img src="images/hero.png"
-     alt="Salvatore Caccavo Apps">
-
+alt="Salvatore Caccavo Apps">
 </section>
-
+<div class="downloads">
+<a class="download-btn"
+href="https://apps.apple.com/it/app/salvaflow/id6773806699"
+target="_blank">
+📊 Scarica SalvaFlow
+</a>
+<a class="download-btn"
+href="https://apps.apple.com/it/app/ramino-segnapunti-pro/id6774932245"
+target="_blank">
+🃏 Scarica Ramino Segnapunti Pro
+</a>
+</div>
 <div class="container">
-
 <div class="card">
-
 <h2>👨‍💻 Lo sviluppatore</h2>
-
 <p>
 Salvatore Caccavo Apps sviluppa applicazioni iOS moderne,
 semplici da utilizzare e progettate per migliorare la produttività,
 la gestione personale e il tempo libero.
 </p>
-
 </div>
-
 <div class="card">
-
 <h2>📧 Supporto</h2>
-
 <p class="email">
 <a href="mailto:salvatorecaccavo@yahoo.it">
 salvatorecaccavo@yahoo.it
 </a>
 </p>
-
 </div>
-
 <div class="card">
-
 <h2>🔒 Privacy</h2>
-
 <p>
-Le applicazioni pubblicate non raccolgono dati personali sensibili,
-non vendono dati a terzi e utilizzano esclusivamente i servizi
-necessari al corretto funzionamento delle applicazioni.
+Le applicazioni non raccolgono dati personali sensibili,
+non condividono dati con terze parti e utilizzano esclusivamente
+i servizi necessari al corretto funzionamento delle app.
 </p>
-
 </div>
-
 </div>
-
 <footer>
 © 2026 Salvatore Caccavo Apps
 </footer>
-
 </body>
 </html>
 ``
