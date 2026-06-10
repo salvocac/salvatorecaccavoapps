@@ -13,117 +13,117 @@
 <style>
 
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 body{
-font-family:-apple-system,BlinkMacSystemFont,sans-serif;
-background:linear-gradient(135deg,#eef4ff,#dce9ff);
-color:#1d1d1f;
+    font-family:-apple-system,BlinkMacSystemFont,sans-serif;
+    background:linear-gradient(135deg,#eef4ff,#dce9ff);
+    color:#1d1d1f;
 }
 
 .container{
-max-width:1400px;
-margin:auto;
-padding:20px;
+    max-width:1400px;
+    margin:auto;
+    padding:20px;
 }
 
 /* HERO */
 
 .hero{
-margin-bottom:30px;
+    margin-bottom:40px;
 }
 
 .hero img{
-width:100%;
-display:block;
-border-radius:35px;
-box-shadow:0 20px 60px rgba(0,0,0,.12);
+    width:100%;
+    display:block;
+    border-radius:40px;
+    box-shadow:0 20px 60px rgba(0,0,0,.12);
 }
 
 /* APPS */
 
 .apps{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(500px,1fr));
-gap:30px;
-margin-bottom:40px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(500px,1fr));
+    gap:30px;
+    margin-bottom:50px;
 }
 
 .app-link{
-display:block;
-transition:.25s;
+    display:block;
+    transition:all .25s ease;
 }
 
 .app-link:hover{
-transform:translateY(-8px);
+    transform:translateY(-8px);
 }
 
 .app-link img{
-width:100%;
-display:block;
-border-radius:30px;
-box-shadow:0 15px 40px rgba(0,0,0,.12);
+    width:100%;
+    display:block;
+    border-radius:35px;
+    box-shadow:0 15px 40px rgba(0,0,0,.12);
 }
 
-/* INFO */
+/* INFO CARD */
 
 .info-card{
-background:rgba(255,255,255,.75);
-backdrop-filter:blur(20px);
-padding:40px;
-border-radius:35px;
-margin-bottom:25px;
-box-shadow:0 10px 30px rgba(0,0,0,.08);
+    background:rgba(255,255,255,.75);
+    backdrop-filter:blur(20px);
+    padding:40px;
+    border-radius:35px;
+    margin-bottom:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
 }
 
 .info-card h2{
-font-size:2rem;
-margin-bottom:20px;
-color:#001f5c;
+    font-size:2rem;
+    color:#003b8e;
+    margin-bottom:20px;
 }
 
 .info-card p{
-font-size:1.25rem;
-line-height:1.8;
+    font-size:1.2rem;
+    line-height:1.8;
 }
 
 .info-card a{
-color:#0071e3;
-text-decoration:none;
-font-weight:600;
+    color:#0071e3;
+    text-decoration:none;
+    font-weight:600;
 }
 
 /* FOOTER */
 
 footer{
-text-align:center;
-padding:40px;
-font-size:1rem;
-color:#64748b;
+    text-align:center;
+    padding:50px 20px;
+    color:#64748b;
+    font-size:1rem;
 }
 
 /* MOBILE */
 
 @media(max-width:900px){
 
-.apps{
-grid-template-columns:1fr;
-}
+    .apps{
+        grid-template-columns:1fr;
+    }
 
-.info-card{
-padding:30px;
-}
+    .info-card{
+        padding:30px;
+    }
 
-.info-card h2{
-font-size:1.7rem;
-}
+    .info-card h2{
+        font-size:1.7rem;
+    }
 
-.info-card p{
-font-size:1.1rem;
-}
+    .info-card p{
+        font-size:1.1rem;
+    }
 
 }
 
@@ -135,91 +135,92 @@ font-size:1.1rem;
 
 <div class="container">
 
-<!-- HERO -->
+    <!-- HERO -->
 
-<section class="hero">
+    <section class="hero">
 
-<img src="images/hero-top.png"
-alt="Salvatore Caccavo Apps">
+        <img src="images/hero-top.png"
+             alt="Salvatore Caccavo Apps">
 
-</section>
+    </section>
 
-<!-- APPS -->
+    <!-- APP SALVAFLOW E RAMINO -->
 
-<section class="apps">
+    <section class="apps">
 
-<a class="app-link"
-href="https://apps.apple.com/it/app/salvaflow/id6773806699"
-target="_blank">
+        <a class="app-link"
+           href="https://apps.apple.com/it/app/salvaflow/id6773806699"
+           target="_blank">
 
-<img src="images/salvaflow-card.png"
-alt="SalvaFlow">
+            <img src="images/salvaflow-card.png"
+                 alt="SalvaFlow">
 
-</a>
+        </a>
 
-<a class="app-link"
-href="https://apps.apple.com/it/app/ramino-segnapunti-pro/id6774932245"
-target="_blank">
+        <a class="app-link"
+           href="https://apps.apple.com/it/app/ramino-segnapunti-pro/id6774932245"
+           target="_blank">
 
-<img src="images/ramino-card.png"
-alt="Ramino Segnapunti Pro">
+            <img src="images/ramino-card.png"
+                 alt="Ramino Segnapunti Pro">
 
-</a>
+        </a>
 
-</section>
+    </section>
 
-<!-- SVILUPPATORE -->
+    <!-- SVILUPPATORE -->
 
-<section class="info-card">
+    <section class="info-card">
 
-<h2>👨‍💻 Lo sviluppatore</h2>
+        <h2>👨‍💻 Lo sviluppatore</h2>
 
-<p>
-Salvatore Caccavo Apps sviluppa applicazioni iOS moderne,
-semplici da utilizzare e progettate per migliorare la
-produttività, la gestione personale e il tempo libero.
-</p>
+        <p>
+            Salvatore Caccavo Apps sviluppa applicazioni iOS moderne,
+            intuitive e professionali, progettate per semplificare la
+            gestione personale, delle finanze e del tempo libero.
+        </p>
 
-</section>
+    </section>
 
-<!-- SUPPORTO -->
+    <!-- SUPPORTO -->
 
-<section class="info-card">
+    <section class="info-card">
 
-<h2>📧 Supporto</h2>
+        <h2>📧 Supporto</h2>
 
-<p>
+        <p>
 
-<a href="mailto:salvatorecaccavo@yahoo.it">
-salvatorecaccavo@yahoo.it
-</a>
+            <a href="mailto:salvatorecaccavo@yahoo.it">
+                salvatorecaccavo@yahoo.it
+            </a>
 
-</p>
+        </p>
 
-</section>
+    </section>
 
-<!-- PRIVACY -->
+    <!-- PRIVACY -->
 
-<section class="info-card">
+    <section class="info-card">
 
-<h2>🔒 Privacy</h2>
+        <h2>🔒 Privacy</h2>
 
-<p>
-Le applicazioni non raccolgono dati personali sensibili,
-non vendono dati a terzi e utilizzano esclusivamente
-i servizi necessari al corretto funzionamento delle app.
-</p>
+        <p>
+            Le applicazioni pubblicate da Salvatore Caccavo Apps
+            non raccolgono dati personali sensibili e non vendono
+            informazioni a terzi. I dati rimangono sul dispositivo
+            dell'utente e vengono utilizzati esclusivamente per il
+            corretto funzionamento delle applicazioni.
+        </p>
 
-</section>
+    </section>
 
 </div>
 
 <footer>
 
-© 2026 Salvatore Caccavo Apps
+    © 2026 Salvatore Caccavo Apps
 
 </footer>
 
 </body>
-
 </html>
